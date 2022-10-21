@@ -1,0 +1,29 @@
+body {
+  background-image: url("./img/fondo.png");
+}
+
+main {
+  width: 1004px;
+  height: 658px;
+  margin: auto;
+}
+
+header {
+  height: 128px;
+}
+
+article {
+  width: 652px;
+  height: 662px;
+  float: left;
+}
+
+aside {
+  width: 352px;
+  height: 662px;
+  margin-left: 652px;
+}
+
+footer {
+  height: 243px;
+}
