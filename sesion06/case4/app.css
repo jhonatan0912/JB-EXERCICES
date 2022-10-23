@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  background-color: rgb(75, 238, 75);
+}
+
+.second__section {
+  background-color: yellow;
+}
+
+.third__section {
+  background-color: #555454;
+  margin: 20px 0 0 0;
+}
+
+.third__section>h2 {
+  padding: 0 0 1em 0;
+}
