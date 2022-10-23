@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  gap: 2em;
+}
+
+.first__section {
+  width: 25%;
+}
+
+.second__section {
+  width: 50%;
+  background-color: yellow;
+}
+
+.second__section__content {
+  display: flex;
+  padding: 0 0 10em 0;
+}
+
+.second__section__paragraph {
+  width: 60%;
+}
+
+img[alt="plant"] {
+  width: 300px;
+  height: 250px;
+}
+
+.third__section {
+  width: 25%;
+  background-color: rgb(79, 79, 79);
+  height: 200px;
+}
+
+ul {
+  background-color: rgb(75, 238, 75);
+}
