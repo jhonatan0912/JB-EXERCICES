@@ -1,0 +1,31 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+legend {
+  font-size: 20px;
+}
+
+#form1 {
+  width: 40%;
+  margin: auto;
+  background-color: #141bfe;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  border: 10px solid lightslategray;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#form1 fieldset {
+  margin-left: 5%;
+}
+
+#form1 [required] {
+  border: 1px solid #141bfe;
+}
+
+#form1 input {
+  margin-left: 30px;
+}
