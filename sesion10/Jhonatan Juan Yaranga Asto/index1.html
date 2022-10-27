@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio1_Javascript</title>
+</head>
+
+<body>
+  <script>
+    // Variables declaration
+    var dni, cliente, producto, precio, cantidad;
+    var st, igv, tps, tpd, tc;
+    // Input data
+    dni = prompt("DNI: ");
+    cliente = prompt("Cliente: ");
+    producto = prompt("Producto: ");
+    precio = parseFloat(prompt("Precio: "));
+    cantidad = parseInt(prompt("Cant: "))
+    tc = parseFloat(prompt("Tipo cambio:"))
+    // Process
+    st = precio * cantidad;
+    igv = st * 0.18;
+    tps = st + igv;
+    tpd = tps / tc;
+    // Output
+    document.write("Resultados de la venta:" + "<br>");
+    document.write("<hr>");
+    document.write("DNI: " + dni + "<br>");
+    document.write("Cliente: " + cliente + "<br>");
+    document.write("Producto: " + producto + "<br>");
+    document.write("Precio: " + precio + "<br>");
+    document.write("Cantidad: " + cantidad + "<br>");
+    document.write("Tipo de cambio: " + tc + "<br>");
+
+    document.write("<br>" + "El subtotal es: " + st.toFixed(2) + "<br>");
+    document.write("El IGV es: " + igv.toFixed(2) + "<br>");
+    document.write("El Total a pagar S/  es: " + tps.toFixed(2) + "<br>");
+    document.write("El Total a pagar $ es: " + tpd.toFixed(2) + "<br>");
+  </script>
+
+</body>
+
+</html>

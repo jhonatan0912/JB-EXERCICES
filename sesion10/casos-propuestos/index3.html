@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso3_Javascript</title>
+</head>
+
+<body>
+  <script>
+    let empleado = prompt("Insertar nombre de empleado: ")
+    let sueldo = parseInt(prompt("Insertar sueldo: "))
+    let venta1 = parseInt(prompt("Insertar venta 1: "))
+    let venta2 = parseInt(prompt("Insertar venta 2: "))
+    let venta3 = parseInt(prompt("Insertar venta 3: "))
+    let tipoCambio = parseFloat(prompt("Insertar tipo de cambio: "))
+    let total = venta1 + venta2 + venta3;
+    let comision = total * 0.1;
+    let sueldoSoles = sueldo + comision;
+    let sueldoDolares = (sueldo + comision) / tipoCambio;
+
+    document.write(`
+    <h1>Resultado:</h1>
+
+    Empleado: ${empleado}
+    <br>
+    Sueldo: ${sueldo}
+    <br>
+    Venta 1: ${venta1}
+    <br>
+    Venta 2: ${venta2}
+    <br>
+    Venta 3: ${venta3}
+    <br>
+    Tipo de cambio: ${tipoCambio}
+    <br>
+    Comisiòn: ${comision}
+    <br>
+    Pago total S/: ${sueldoSoles}
+    <br>
+    Pago total $: ${sueldoDolares.toFixed(2)}
+    
+      
+    `)
+
+  </script>
+
+</body>
+
+</html>
