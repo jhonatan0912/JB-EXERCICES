@@ -26,19 +26,31 @@
     tps = st + igv;
     tpd = tps / tc;
     // Output
-    document.write("Resultados de la venta:" + "<br>");
-    document.write("<hr>");
-    document.write("DNI: " + dni + "<br>");
-    document.write("Cliente: " + cliente + "<br>");
-    document.write("Producto: " + producto + "<br>");
-    document.write("Precio: " + precio + "<br>");
-    document.write("Cantidad: " + cantidad + "<br>");
-    document.write("Tipo de cambio: " + tc + "<br>");
-
-    document.write("<br>" + "El subtotal es: " + st.toFixed(2) + "<br>");
-    document.write("El IGV es: " + igv.toFixed(2) + "<br>");
-    document.write("El Total a pagar S/  es: " + tps.toFixed(2) + "<br>");
-    document.write("El Total a pagar $ es: " + tpd.toFixed(2) + "<br>");
+    document.write(`
+    <h1>Resultado:</h1>
+    
+    <hr>
+    DNI: ${dni}
+    <br>
+    Cliente: ${cliente}
+    <br>
+    Producto: ${producto}
+    <br>
+    Precio: ${precio}
+    <br>
+    Cantidad: ${cantidad}
+    <br>
+    <br>
+    Tipo de cambio: ${tc}
+    <br>
+    El subtotal es : ${st.toFixed(2)}
+    <br>
+    El IGV es: ${igv.toFixed(2)}
+    <br>
+    El Total a pagar S/ es: ${tps.toFixed(2)}
+    <br>
+    El Total a pagar $ es: ${tpd.toFixed(2)}
+    `)
   </script>
 
 </body>
