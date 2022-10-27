@@ -17,10 +17,14 @@
     r = parseInt(cant % 200)
     b100 = parseInt(r / 100)
 
-    document.write("Resultados: " + "<br>")
-    document.write("<hr>")
-    document.write("La cantidad de billetes de 200: " + b200 + "<br>")
-    document.write("La cantidad de billetes de 100: " + b100)
+    document.write(`
+    <h1>Resultado:</h1>
+
+    <hr>
+    La cantidad de billetes de 200: ${b200}
+    <br>
+    La cantidad de billetes de 100: ${b100}
+    `)
 
   </script>
 </body>

@@ -20,14 +20,22 @@
     dcto = sb * 0.13;
     sn = sb - dcto;
 
-    document.write("Resultados: " + "<br>");
-    document.write("<hr>")
-    document.write("Empleado: " + empleado + "<br>")
-    document.write("Horas trab: " + ht + "<br>")
-    document.write("Tarifa * hora: " + th + "<br>")
-    document.write("Sueldo bruto: " + sb.toFixed(2) + "<br>")
-    document.write("Descuento: " + dcto.toFixed(2) + "<br>")
-    document.write("Sueldo neto: " + sn.toFixed(2) + "<br>")
+    document.write(`
+    <h1>Resultado:</h1>
+
+    <hr>
+    Empleado: ${empleado}
+    <br>
+    Horas trab: ${ht}
+    <br>
+    Tarifa * hora: ${th}
+    <br>
+    Sueldo bruto:${sb.toFixed(2)}
+    <br>
+    Descuento:${dcto.toFixed(2)}
+    <br>
+    Sueldo neto:${sn.toFixed(2)}
+    `)
   </script>
 </body>
 
