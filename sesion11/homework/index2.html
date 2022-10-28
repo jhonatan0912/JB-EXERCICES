@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let number = parseInt(prompt("Insertar numero: "))
+    let result;
+    if (number > 500) {
+      result = number * 0.18;
+    } else {
+      alert("El numero es menor o igual a 500")
+    }
+
+    document.write(`
+    <h1>Resultado:</h1>
+
+    El 18% de ${number} es ${result}
+    `)
+  </script>
+</body>
+
+</html>
