@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio2</title>
+</head>
+
+<body>
+  <script>
+    let sueldoEmpleado1 = parseInt(prompt("Insertar sueldo primer empleado:"))
+    let sueldoEmpleado2 = parseInt(prompt("Insertar sueldo segundo empleado:"))
+    let sueldoEmpleado3 = parseInt(prompt("Insertar sueldo tercer empleado:"))
+
+    let aumentoEmpleado1 = sueldoEmpleado1 + (sueldoEmpleado1 * 0.1);
+    let aumentoEmpleado2 = sueldoEmpleado2 + (sueldoEmpleado2 * 0.12);
+    let aumentoEmpleado3 = sueldoEmpleado3 + (sueldoEmpleado3 * 0.15);
+
+    document.write(`
+<h1>Resultado:</h1>
+
+Sueldo anterior empleado 1 : ${sueldoEmpleado1} | Sueldo actual : ${aumentoEmpleado1}
+<br>
+Sueldo anterior empleado 2 : ${sueldoEmpleado2} | Sueldo actual : ${aumentoEmpleado2}
+<br>
+Sueldo anterior empleado 3 : ${sueldoEmpleado3} | Sueldo actual : ${aumentoEmpleado3}
+`)
+  </script>
+</body>
+
+</html>

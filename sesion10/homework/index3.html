@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio3</title>
+</head>
+
+<body>
+  <script>
+    let primeraNota = parseInt(prompt("Insertar primera nota: "))
+    let segundaNota = parseInt(prompt("Insertar segunda nota: "))
+    let terceraNota = parseInt(prompt("Insertar tercera nota: "))
+
+    let calificacionFinal = (primeraNota * 0.3) + (segundaNota * 0.3) + (terceraNota * 0.4)
+
+    document.write(`
+    <h1>Resultado:</h1>
+
+    El promedio es: ${calificacionFinal}
+    `)
+  </script>
+</body>
+
+</html>
