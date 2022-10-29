@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em;
+}

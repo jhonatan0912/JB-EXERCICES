@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var opc, num1, num2;
+    var r;
+    var operacion;
+
+    num1 = parseInt(prompt("Ingresa numero 1"))
+    num2 = parseInt(prompt("Ingresa numero 2"))
+    opc = parseInt(prompt("Tipo  de operacion[1,2,3,4]:"))
+
+    switch (opc) {
+      case 1:
+        r = num1 + num2;
+        operacion = "Suma"
+        break;
+      case 2:
+        r = num1 - num2;
+        operacion = "Resta"
+        break;
+      case 3:
+        r = num1 * num2;
+        operacion = "Multiplicación"
+        break;
+      case 4:
+        r = num1 / num2;
+        operacion = "División"
+        break;
+
+      default:
+        document.write("La opciòn es incorrecta <br>")
+        break;
+    }
+
+    //Output
+    document.write(`
+    <h1>Resultados de la operación</h1
+      <hr>
+    Numero 1: ${num1}
+    <br>
+    Numero 2: ${num2}
+    <br>
+    La operación es: ${operacion}
+    <br>
+    Resultados: ${r}
+    `)
+  </script>
+</body>
+
+</html>
