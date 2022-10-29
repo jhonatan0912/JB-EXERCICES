@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio_estructuras_repetitivas</title>
+</head>
+
+<body>
+  <h1>Tabla de multiplicar</h1>
+  <select id="numeros" onchange="datos()">
+    <option selected>Seleccionar</option>
+    <option value="1" id="1">1</option>
+    <option value="2" id="2">2</option>
+    <option value="3" id="3">3</option>
+    <option value="4" id="4">4</option>
+    <option value="5" id="5">5</option>
+    <option value="6" id="6">6</option>
+    <option value="7" id="7">7</option>
+    <option value="8" id="8">8</option>
+    <option value="9" id="9">9</option>
+    <option value="10" id="10">10</option>
+    <option value="11" id="11">11</option>
+    <option value="12" id="12">12</option>
+  </select>
+
+  <script>
+    function datos() {
+      var n, i, r;
+      var cbonumeros = document.getElementById("numeros")
+      var valor = cbonumeros.options[cbonumeros.selectedIndex].text
+      n = parseInt(valor)
+
+      i = 0;
+
+      document.write(`
+      <h1>Tabla de multiplicar</h1>
+      <hr>
+      `)
+      for (i = 1; i <= 12; i++) {
+        r = n * i
+        document.write(`
+        ${n} * ${i} = ${r} <br>             
+        `)
+      }
+    }
+  </script>
+</body>
+
+</html>
