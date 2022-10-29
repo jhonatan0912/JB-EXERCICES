@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aqua;
+  background: #202020;
+  font-weight: bolder;
+  font-size: 2em;
+}
